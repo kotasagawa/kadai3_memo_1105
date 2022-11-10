@@ -1,0 +1,497 @@
+
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Bangers', cursive;
+  background-color: #003067;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popup {
+  position: absolute;
+  top: -85%;
+  left: 50%;
+  width: 320px;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  font-family: 'Bangers', cursive;
+  color: #333333;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.show {
+  top: 45%;
+}
+
+.popup > p {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
+.btn-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-flex-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+.popup-btn {
+  text-align: center;
+  padding: 12px 30px;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+}
+
+.count-timer {
+  margin-bottom: 16px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #7797bb;
+  text-shadow: #ffffff 1px 1px 0px, #ffffff -1px 1px 0px, #ffffff 1px -1px 0px,
+    #ffffff -1px -1px 0px;
+}
+
+button {
+  border: 0;
+  background: none;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.box1 {
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+#js-comment {
+  font-size: 30px;
+  color: white;
+}
+
+
+.start-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  color: #FFF;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  transition: .4s;
+  font-size: 20px;
+}
+
+.start-btn:hover {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.stop-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  color: #FFF;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  transition: .4s;
+  font-size: 20px;
+}
+
+.stop-btn:hover {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.reset-btn {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Bangers', cursive;
+  color: #FFF;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  transition: .4s;
+  font-size: 20px;
+}
+
+.reset-btn:hover {
+  -webkit-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+.timer-btn {
+  margin-right: 20px;
+}
+
+.timer-btn:last-child {
+  margin-right: 0;
+}
+
+/* todoリスト */
+
+#js-todo-ttl {
+  margin-right: 20px;
+}
+
+.register-box {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.output-flex {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+
+.todo-box, .item-box {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  width: 30%;
+  border-radius: 10px;
+}
+
+.todo-box, .done-box h2 {
+  text-align: center;
+  color: white;
+}
+
+.done-box {
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  width: 30%;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.item-box {
+  width: 30%;
+  padding: 10px;
+  color: white;
+}
+
+.item-box-inner {
+  text-align: left;
+  height: 160px;
+}
+
+.character-usa {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.todobox-box {
+  width: 80%;
+  text-align: center;
+}
+
+.todobox-box ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.todo-box li {
+  width: 100%;
+  list-style: none;
+  text-align: left;
+  padding: 1px 10px;
+  margin-bottom: 5px;
+  border-bottom: solid 2px ;
+
+}
+
+.donebox-box {
+  width: 80%;
+  text-align: center;
+}
+
+.donebox-box ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.done-box li {
+  width: 100%;
+  list-style: none;
+  border-bottom: solid 2px black;
+  text-align: left;
+  padding: 1px 20px;
+  margin-bottom: 5px;
+}
+
+
+.box__list li {
+  height: 33px;
+}
+
+/* タスク入力欄のデザイン */
+.cp_iptxt {
+	position: relative;
+	width: 20%;
+	margin: 20px 3%;
+  align-items: center;
+}
+.cp_iptxt input[type=text] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	margin: 8px 0;
+	padding: 0.3em;
+	transition: 0.3s;
+	border: 3px solid #1b2538;
+	border-radius: 4px;
+	outline: none;
+}
+.cp_iptxt input[type=text]:focus {
+	border-color: #da3c41;
+}
+.cp_iptxt input[type=text] {
+	padding-left: 40px;
+}
+.cp_iptxt i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+.cp_iptxt input[type=text]:focus + i {
+	color: #da3c41;
+}
+/* タスク入力欄のデザイン終わり */
+
+
+/* ボタンタグの装飾 */
+ 
+#js-done-btn, #js-del-btn {
+  background-color: white;
+  border: solid 1px red;
+  padding: 3px;
+  margin-right: 5px;
+}
+
+/* 登録ボタン */
+/* solid012 */
+
+.button_solid012 {
+  margin-right: 20px;
+}
+
+.button_solid012 button {
+  background: #6bb6ff;
+  border-radius: 3px;
+  font-family: 'Bangers', cursive;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #003067;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  border: 2px solid #000;
+  z-index: 1;
+  border-radius: 5px;
+}
+.button_solid012 button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #6bb6ff;
+  z-index: -1;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.button_solid012 button:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translate3d(0,0.40rem,-1rem);
+  transform: translate3d(0,0.40rem,-1rem);
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #2b7fde;
+  -webkit-box-shadow: 0 0.6rem 0 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0.4rem 0 0 rgb(0 0 0 / 20%);
+  z-index: -2;
+}
+.button_solid012 button i {
+  position: absolute;
+  right: 9px;
+}
+.button_solid012 button:hover {
+  transform: translate3d(0,0.2rem,-1rem);
+}
+.button_solid012 button:hover:after {
+  transform: translate3d(0,0.2rem,-1rem);
+  box-shadow: 0 0.2rem 0 0 rgb(0 0 0 / 20%);
+}
+/* solid012 */
+/* 登録ボタン終わり */
+
+/* 全削除ボタン */
+/* solid013 */
+
+.button_solid013 {
+  margin-right: 20px;
+}
+
+.button_solid013 button {
+  background: #6bb6ff;
+  border-radius: 3px;
+  font-family: 'Bangers', cursive;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 240px;
+  padding: 10px 25px;
+  color: #003067;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  border: 2px solid #000;
+  z-index: 1;
+  border-radius: 5px;
+}
+.button_solid013 button:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #6bb6ff;
+  z-index: -1;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+.button_solid013 button:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transform: translate3d(0,0.40rem,-1rem);
+  transform: translate3d(0,0.40rem,-1rem);
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #2b7fde;
+  -webkit-box-shadow: 0 0.6rem 0 0 rgb(0 0 0 / 20%);
+  box-shadow: 0 0.4rem 0 0 rgb(0 0 0 / 20%);
+  z-index: -2;
+}
+.button_solid013 button i {
+  position: absolute;
+  right: 9px;
+}
+.button_solid013 button:hover {
+  transform: translate3d(0,0.2rem,-1rem);
+}
+.button_solid013 button:hover:after {
+  transform: translate3d(0,0.2rem,-1rem);
+  box-shadow: 0 0.2rem 0 0 rgb(0 0 0 / 20%);
+}
+/* solid013 */
+/* 全削除ボタン終わり */
+
+/* 完了ボタン */
+
+#js-done-btn {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	position: relative;
+	margin: auto;
+	font-weight: bold;
+	border-radius: 10px;
+  padding: 1px 7px;
+	color: #27acd9;
+	border: 3px solid #27acd9;
+	box-shadow: 3px 3px #27acd9;
+	transition: 0.3s ease-in-out;
+  margin-right: 6px;
+}
+
+#js-done-btn:hover {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+	color: #27acd9;
+}
+/* 完了ボタン終わり */
+
+
+/* 削除ボタン */
+
+#js-del-btn {
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	position: relative;
+	margin: auto;
+	font-weight: bold;
+	border-radius: 10px;
+  padding: 1px 5px;
+	color: #27acd9;
+	border: 3px solid #27acd9;
+	box-shadow: 3px 3px #27acd9;
+	transition: 0.3s ease-in-out;
+}
+
+#js-del-btn:hover {
+	box-shadow: none;
+	transform: translate(3px, 3px);
+	color: #27acd9;
+}
+/* 削除ボタン終わり */

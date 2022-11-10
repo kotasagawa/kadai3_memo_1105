@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="container">
+    <!-- タイマー終了時の音 -->
+    <audio id="js-audio" src="audio/school_bell.mp3"></audio> 
+    <div id="js-rest-popup" class="popup">
+      
+      <div class="btn-flex">
+        <button id="js-rest-btn" class="popup-btn" type="button">Rest</button>
+        <p id="js-total-time"></p>
+        <button id="js-finish-btn" class="popup-btn" type="button">Finish</button>
+      </div>
+    </div>
+
+    <div id="js-restart-popup" class="popup">
+
+      <div class="btn-flex-center">
+        <button id="js-restart-btn" class="popup-btn" type="button">再開する</button>
+      </div>
+
+    </div>
+    <div id="js-count-timer" class="count-timer">25:00</div>
+    <p id="js-comment">Click Start!</p>
+    <div class="timerbtn">
+        <div>
+            <button id="js-start" class="timer-btn start-btn" type="button">Start</button>
+            <button id="js-stop" class="timer-btn stop-btn" type="button">Stop</button>
+            <button id="js-reset" class="timer-btn reset-btn" type="button">Reset</button>
+        </div>
+  </div>
+  <div class="box1">
+    <span id="month_day"> </span><span class="time" id="pomo_number">0</span>
+    <span>ポモドーロ</span>
+  </div>
+
+  <!-- todoリスト -->
+  <div class="register-box" id="js-add-form">
+      <div class="cp_iptxt">   
+          <input id="js-todo-ttl" type="text" placeholder="Task" maxlength="25">
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div> 
+      <div class="button_solid012">
+        <button id="js-register-btn" onclick="audio()">Register<i class="fas fa-angle-right fa-position-right"></i></button>
+      </div>
+      <div class="button_solid013">
+        <button id="js-allremove-btn" >All Clear<i class="fas fa-angle-right fa-position-right"></i></button>
+      </div>
+      <div class="button_solid013">
+        <button id="sound_btn" >Sound<i class="fas fa-angle-right fa-position-right"></i></button>
+      </div>
+  </div>
+
+  <div class="output-flex">
+
+    <div class="todo-box">
+      <h2>To Do List</h2>
+      <div class="todobox-box">
+         <ul class="box__list" id="js-todo-list"></ul>
+      </div>
+    </div>
+
+    <div class="done-box">
+      <h2>Done List</h2>
+      <div class="donebox-box">
+        <ul class="box__list" id="js-done-list"></ul>
+      </div>
+    </div>
+    <div class="item-box">
+      <h2>Item List</h2>
+      <div class="item-box-inner" id="imageArea">
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+      <audio id="donebtn_audio">
+        <source src="audio/done.mp3" type="audio/mp3">
+    </audio>
+    <audio id="registerbtn_audio">
+      <source src="audio/register.mp3" type="audio/mp3">
+    </audio>
+    <audio id="cancelbtn_audio">
+      <source src="audio/cancel.mp3" type="audio/mp3">
+    </audio>
+    <audio id="sound_btn_audio">
+      <source src="audio/takibi.mp3" type="audio/mp3">
+    </audio>
+      <!-- todoリスト -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+</body>
+</html>
